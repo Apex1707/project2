@@ -4,6 +4,7 @@ let masterplay=document.getElementById('play');
 let masterpause=document.getElementById('pause');
 let progressbar=document.getElementById('myprogressbar');
 let gif=document.getElementById('ping');
+let songnames=document.getElementById('songname');
 
 let songs=[
     {songname:"Subhanallah",filepath:'songs/1.mp3',coverpath:'covers/1.jpeg'},
@@ -21,9 +22,11 @@ let songs=[
 masterplay.addEventListener('click',()=>{
     if(audioElement.paused || audioElement.currentTime<=0){
         audioElement.play();
+        gif.style.opacity=1;
+        songnames.innerText=songs[songindex].songname;
         masterplay.style.display="none"
         masterpause.classList.remove('pauseok');
-        gif.style.opacity=1;
+        
     }
 })
 
@@ -61,6 +64,8 @@ Array.from(document.getElementsByClassName('songitemplay')).forEach((element)=>{
         makeAllplay();
         songindex=parseInt(e.target.id)
         audioElement.src=`songs/${songindex+1}.mp3`;
+        gif.style.opacity=1;
+        songnames.innerText=songs[songindex].songname;
         audioElement.currentTime=0;
         audioElement.play();
     })
@@ -74,6 +79,8 @@ document.getElementById('next').addEventListener('click',()=>{
         songindex+=1;
     }
     audioElement.src=`songs/${songindex+1}.mp3`;
+    gif.style.opacity=1;
+    songnames.innerText=songs[songindex].songname;
         audioElement.currentTime=0;
         audioElement.play();
 })
@@ -85,6 +92,11 @@ document.getElementById('previous').addEventListener('click',()=>{
         songindex-=1;
     }
     audioElement.src=`songs/${songindex+1}.mp3`;
+    gif.style.opacity=1;
+    songnames.innerText=songs[songindex].songname;
         audioElement.currentTime=0;
         audioElement.play();
+        
 })
+
+
