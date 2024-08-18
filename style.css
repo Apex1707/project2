@@ -1,0 +1,95 @@
+body{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar */
+.navbar{
+    height: 60px;
+    background-color: #dfd6d1;
+    color: white;
+    width: 100%;
+    
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+ text-decoration: none;
+ list-style: none;
+ /* padding: 8px; */
+ 
+}
+.navbar img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 1px 4px 0 0;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: rgb(127, 76, 10);
+    
+    margin: 0 23px;
+}
+.list-item{
+    padding: 8px;
+    font-size: 1rem;
+    color: #4d0011;
+}
+
+
+
+/* content */
+.content-container{
+    min-height: 70vh;
+    background-color: #1f232c;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 15px;
+    padding: 34px;
+    background-image: url(bg.jpg);
+    background-size:cover ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* bottom */
+.bottom{
+    height: 115px;
+    /* background-color: #1f232c; */
+    background-color:#83746e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+#myprogressbar{
+    width: 80vw;
+    margin-bottom: 8px;
+}
+.icons img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
