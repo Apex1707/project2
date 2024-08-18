@@ -22,52 +22,52 @@
             <div class="songs">
                 <img src="./covers/1.jpeg" alt="1">
                 <span class="name">Subhanallah</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="timestamp">03:25 <img class="songitemplay" id="0" src="playcircle.png" alt=""></span>
             </div>
             <div class="songs">
                 <img src="./covers/2.webp" alt="1">
                 <span class="name">Abhi kuch dino se</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="timestamp">04:16 <img class="songitemplay" id="1" src="playcircle.png" alt=""></span>
             </div>
             <div class="songs">
                 <img src="./covers/3.jpeg" alt="1">
                 <span class="name">Akull-Yaad na aye</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="timestamp">03:30 <img class="songitemplay" id="2" src="playcircle.png" alt=""></span>
             </div>
             <div class="songs">
                 <img src="./covers/4.jpg" alt="1">
                 <span class="name">Pehle bhi main</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="timestamp">04:16 <img class="songitemplay" id="3" src="playcircle.png" alt=""></span>
             </div>
             <div class="songs">
                 <img src="./covers/5.jpeg" alt="1">
                 <span class="name">Chale aana</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="timestamp">03:03 <img class="songitemplay" id="4" src="playcircle.png" alt=""></span>
             </div>
             <div class="songs">
                 <img src="./covers/6.jpeg" alt="1">
                 <span class="name">Ek tarfa</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="timestamp">04:17 <img class="songitemplay" id="5" src="playcircle.png" alt=""></span>
             </div>
             <div class="songs">
                 <img src="./covers/7.jpeg" alt="1">
-                <span class="name">Subhanallah</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="name">Jab Tak</span>
+                <span class="timestamp">03:36 <img class="songitemplay" id="6" src="playcircle.png" alt=""></span>
             </div>
             <div class="songs">
                 <img src="./covers/8.jpeg" alt="1">
-                <span class="name">Subhanallah</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="name">Nai Lagda</span>
+                <span class="timestamp">02:28 <img class="songitemplay" id="7" src="playcircle.png" alt=""></span>
             </div>
             <div class="songs">
                 <img src="./covers/9.jpeg" alt="1">
-                <span class="name">Subhanallah</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="name">Shayad</span>
+                <span class="timestamp">03:10 <img class="songitemplay" id="8" src="playcircle.png" alt=""></span>
             </div>
             <div class="songs">
                 <img src="./covers/10.jpeg" alt="1">
-                <span class="name">Subhanallah</span>
-                <span class="timestamp">03:25 <img src="playcircle.png" alt=""></span>
+                <span class="name">Tu Hi Hai</span>
+                <span class="timestamp">03:41 <img class="songitemplay" id="9" src="playcircle.png" alt=""></span>
             </div>
 
 
@@ -84,15 +84,18 @@
 
 
     <div class="bottom">
-        <input type="range" name="range" id="myprogressbar">
+        <input type="range" name="range" id="myprogressbar" min="0" value="0" max="100">
         <div class="icons">
-            <img src="backward2.png" alt="">
-            <img src="playcircle.png" alt="">
-            <img src="forward2.png" alt="">
+            <img src="backward2.png" id="previous" alt=""> 
+            <img id="play" class="masterplay"  src="playcircle.png" alt="">
+            <img id="pause" class="masterplay pauseok" src="pause.png" alt="">
+            <img src="forward2.png" id="next" alt="">
             
             
         </div>
-        <div class="songinfo"></div>
+        <div class="songinfo">
+            <span class="gif"><img id="ping" src="playing.gif" alt="">Subhanallah</span>
+        </div>
     </div>
 
     <script src="script.js"></script>

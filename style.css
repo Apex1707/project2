@@ -75,6 +75,7 @@ body{
     margin-left: 10px;
 }.name{
     font-size: 1.2rem;
+    
 }
 .timestamp{
     display: flex;
@@ -120,3 +121,28 @@ body{
     width: 60px;
     border-radius: 50%;
 }
+.songinfo{
+position: absolute;
+    left: 3vw;
+    margin-top:52px ;
+    
+}
+
+.pauseok{
+    display:none ;
+}
+.gif{
+    
+    /* margin-right: 580px; */
+    /* margin-bottom: 1120px; */
+    font-size: 1.5rem;
+    padding: 8px;
+    display: flex;
+}
+.gif img{
+    height: 30px;
+    width: 40px;
+    margin-right: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+} 
